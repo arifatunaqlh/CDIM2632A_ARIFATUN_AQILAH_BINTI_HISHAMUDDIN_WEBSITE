@@ -1,0 +1,440 @@
+*{ 
+    padding: 0;  
+    margin: 0; 
+    font-family: 'Josefin Sans', sans-serif; 
+    box-sizing: border-box; 
+} 
+.hero{ 
+    height: 100vh; 
+    width: 100%; 
+    background-image: url(https://i.pinimg.com/564x/a4/ea/45/a4ea45b970e48706a5331dec20cfffd4.jpg); 
+    background-size: cover; 
+    background-position: center; 
+ 
+} 
+nav{ 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding-top: 45px; 
+    padding-left: 8%; 
+    padding-right: 8%; 
+} 
+span{ 
+    color: brown  
+} 
+.logo{
+    width: 130px;
+}
+nav ul li{ 
+    list-style-type: none; 
+    display: inline-block; 
+    padding: 10px 25px; 
+    font-size: 20px;
+} 
+nav ul li a{ 
+    color: darkolivegreen; 
+    text-decoration: none; 
+    font-weight: bold; 
+    text-transform: capitalize; 
+} 
+nav ul li a:hover{ 
+    color:#f9008d; 
+    transition: .4s; 
+} 
+.content{ 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translateY(-50%); 
+} 
+h1{ 
+    color: gray; 
+    margin: 20px 0px; 
+    font-size: 75px; 
+} 
+h3{ 
+    color: gray; 
+    font-size: 25px; 
+    margin-bottom: 50px; 
+} 
+h4{ 
+    color:black; 
+    letter-spacing: 2px; 
+    font-size: 20px; 
+} 
+.newslatter form{ 
+    width: 380px; 
+    max-width: 100%; 
+    position: relative; 
+} 
+.newslatter form input:first-child{ 
+    display: inline-block; 
+    width: 100%; 
+    padding: 14px 130px 14px 15px; 
+    border: 2px solid #f9008d; 
+    outline: none; 
+    border-radius: 30px; 
+} 
+.newslatter form input:last-child{ 
+    position: absolute; 
+    display: inline-block; 
+    outline: none; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 30px; 
+    background-color: #f9008d; 
+    color: whitesmoke; 
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585; 
+    top: 6px; 
+    right: 6px; 
+}
+.about{  
+    width: 100%;  
+    padding: 100px 0px;  
+    background-color:gainsboro; 
+} 
+.about img{  
+height: auto;  
+width: 430px; 
+} 
+.about-text{ 
+width: 550px; 
+} 
+.main{  
+    width: 1130px; 
+    max-width: 95%;  
+    margin: 0 auto;  
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around; 
+} 
+.about-text h2{ 
+    color: darkolivegreen;  
+    font-size: 75px; 
+    text-transform: capitalize;  
+    margin-bottom: 20px; 
+} 
+.about-text h5{ 
+    color: darkolivegreen; 
+    letter-spacing: 2px;  
+    font-size: 22px;  
+    margin-bottom: 25px;  
+    text-transform: capitalize; 
+} 
+.about-text p{ 
+    color: black;  
+    letter-spacing: 1px;  
+    line-height: 28px; font-size: 18px;  
+    margin-bottom: 45px; 
+}
+
+.education{
+    background: gainsboro;
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color: brown;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 400px;
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: darkolivegreen;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{ 
+    font-size: 50px; 
+    display: block; 
+    text-align: center; 
+    margin: 25px 0px;
+    color: #f9dc009d;
+} 
+h5{
+    color:peachpuff;
+    font-size: 23px; 
+    margin-bottom: 15px;
+}
+.pra p{
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+/* General styles for the Experience section */
+#Experience {
+    padding: 50px 0;
+    background-color: gainsboro;
+}
+
+#Experience .heading {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: brown;
+}
+
+/* Timeline styles */
+.timeline-items {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 30px;
+}
+
+.timeline-items::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 2px;
+    height: 100%;
+    background-color: black;
+}
+
+/* Timeline dot styles */
+.timeline-dot {
+    position: absolute;
+    top: 0;
+    left: 14px;
+    width: 12px;
+    height: 12px;
+    background-color: darkslateblue;
+    border: 2px solid black;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Date styles */
+.timeline-date {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: maroon;
+}
+
+/* Content styles */
+.timeline-content {
+    padding: 10px 20px;
+    background-color: darkslateblue;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: pink;
+}
+
+.timeline-content p {
+    font-size: 1em;
+    color: khaki;
+    margin: 0;
+}
+
+/* General styles for the Skills section */
+#Skills {
+    padding: 50px 0;
+    background-color: gainsboro;
+    text-align: center;
+}
+
+#Skills .heading {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: maroon;
+}
+
+/* Styles for mind map layout */
+.mind-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill {
+    position: relative;
+    width: 200px; 
+    padding: 20px;
+    background-color: rgb(255, 230, 234);
+    border: 1px solid darkolivegreen;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px peachpuff;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    margin: 20px;
+}
+
+.skill:hover {
+    transform: scale(1.05); 
+}
+
+.skill h3 {
+    font-size: 1.2em;
+    color: darkslateblue;
+    margin-bottom: 10px;
+}
+
+.skill ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill ul li {
+    font-size: 1.1em;
+    color: maroon;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.skill .skill-explanation {
+    font-size: 0.9em;
+    color: purple;
+    margin-top: 8px;
+}
+
+/* Line connectors */
+.skill::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 2px;
+    height: 10px;
+    background-color: magenta;
+    transform: translateX(-50%);
+}
+
+.skill:first-child::before {
+    display: none; 
+}
+
+@media (max-width: 768px) {
+    .skill {
+        width: calc(50% - 40px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .skill {
+        width: calc(100% - 40px); 
+    }
+}
+
+/* Video resume section styles */
+.video-resume {
+    margin-top: 50px; 
+    margin-bottom: 50px; 
+    background-color: gainsboro;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+.video-resume h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333; 
+}
+
+.video-container {
+    position: relative;
+    width: 50%; 
+    margin: 0 auto; 
+    padding-top: 28.125%; 
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-resume p {
+    margin-top: 20px;
+    color: #666; 
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        width: 90%;
+    }
+    .video-container {
+        width: 100%;
+        padding-top: 56.25%;
+    }
+}
+/* Basic reset for consistent styling across browsers */ 
+ 
+.main img { 
+    max-width: 350px; /* Adjusted maximum width for medium size */ 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+} 
+ 
+.about-text { 
+    background-color: #fff; 
+    padding: 20px; 
+    margin-top: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+} 
+ 
+.about-text h2 { 
+    margin-bottom: 10px; 
+    font-size: 24px; 
+} 
+ 
+.about-text p { 
+    margin-bottom: 10px; 
+    font-size: 18px; 
+    line-height: 1.8; 
+} 
+ 
+.about-text strong { 
+    font-weight: bold; 
+}
+
